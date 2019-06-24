@@ -73,3 +73,55 @@ body {
     padding: 1.5%;
   }
 }
+.top-section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.top-section .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 50%;
+}
+@media (max-width: 500px) {
+  .top-section .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: none;
+  }
+}
+.top-section .buttons .button1 {
+  margin-right: 25%;
+  width: 100%;
+  padding: 40%;
+  border-radius: 10%;
+  text-align: left;
+  border: 5px, solid, red;
+}
+.top-section .buttons .button1:hover {
+  background-color: #27ae5f;
+  color: white;
+}
+.top-section .buttons .button2 {
+  margin-left: 25%;
+  width: 100%;
+  padding: 40%;
+  border-radius: 10%;
+  background-color: #27ae5f;
+  color: white;
+  border: 5px, solid, purple;
+}
+.top-section .buttons .button2:hover {
+  background-color: white;
+  color: black;
+}
+.top-section img {
+  width: 100%;
+  padding: 5%;
+}
