@@ -1,0 +1,21 @@
+@import './less/variables';
+@import './less/mixins';
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  .flex(none, center, column);
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+@import './less/navigation';
+@import './less/home-page';
