@@ -1,0 +1,32 @@
+// Nagivation Bar
+.navigation{
+    width: 100%;
+    .flex(space-evenly, center, row);
+    padding: .5%;
+
+    nav{
+        .flex(space-evenly, none, row);
+        font-size: 1.8rem;
+        width: 50%;
+        padding: 1%;
+
+        a{
+            text-decoration: none;
+            color:black;
+            &:hover{
+                color: grey;
+            }
+        }
+
+        @media @phone{
+            width:80%;
+            font-size: 1.6;
+            padding: 2%;
+        }
+
+    }
+    @media @phone{
+        padding:1.5%;
+    }
+
+}
