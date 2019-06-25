@@ -43,12 +43,17 @@
 
 }
 .second-section{
-    width: 50%;
-    .flex(flex-start, center, column);
+    width: 100%;
+    .flex(none, center, column);
     background-color: @backgroundColor;
     color: @textColor;
+
+    img{
+        width: 20%;
+        fill: white;
+    }
     .first-row{
-        .flex(flex-start, none, row);
+        .flex(space-evenly, none, row);
         .Data{
             width: 45%;
             .flex(flex-start, center, column);
@@ -61,8 +66,8 @@
     }
 
     .second-row{
-        .flex(flex-start, none, row);
-        .Percent{
+        .flex(space-evenly, none, row);
+        .Result{
             width: 45%;
             .flex(flex-start, center, column);
         }
@@ -71,4 +76,9 @@
             .flex(flex-start, center, column);
         }
     }
+}
+
+.third-section{
+    width: 50%;
+    .flex(none, center, column);
 }
