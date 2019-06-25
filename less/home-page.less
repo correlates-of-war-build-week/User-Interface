@@ -1,0 +1,45 @@
+.top-section{
+    width: 50%;
+    .flex(flex-start, flex-start, column);
+
+    .buttons{
+        .flex(space-between, center, row);
+        padding-left: 50%;
+
+        @media @phone{
+            .flex(space-evenly, center, column);
+            padding: none;
+        }
+        .button1{
+            margin-right: 25%;
+            width: 100%;
+            padding: 40%;
+            border-radius: 10%;
+            text-align: left;
+            border: 5px, solid, red;
+            &:hover{
+                background-color: @backgroundColor;
+                color: @textColor;
+            }
+        }
+
+        .button2{
+            margin-left: 25%;
+            width: 100%;
+            padding: 40%;
+            border-radius: 10%;
+            background-color: @backgroundColor;
+            color: @textColor;
+            border: 5px, solid, purple;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        padding: 5%;
+    }
+
+}
