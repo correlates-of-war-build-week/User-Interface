@@ -30,7 +30,6 @@
             border-radius: 10%;
             background-color: @backgroundColor;
             color: @textColor;
-            border: 5px, solid, purple;
             &:hover{
                 background-color: white;
                 color: black;
@@ -42,4 +41,34 @@
         padding: 5%;
     }
 
+}
+.second-section{
+    width: 50%;
+    .flex(flex-start, center, column);
+    background-color: @backgroundColor;
+    color: @textColor;
+    .first-row{
+        .flex(flex-start, none, row);
+        .Data{
+            width: 45%;
+            .flex(flex-start, center, column);
+        }
+        .Clean{
+            width: 45%;
+            .flex(flex-start, center, column);
+        }
+
+    }
+
+    .second-row{
+        .flex(flex-start, none, row);
+        .Percent{
+            width: 45%;
+            .flex(flex-start, center, column);
+        }
+        .Map{
+            width: 45%;
+            .flex(flex-start, center, column);
+        }
+    }
 }
