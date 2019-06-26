@@ -1,13 +1,16 @@
 .top-section{
     width: 75%;
     .flex(flex-start, center, column);
-    font-size: 4.0rem;
+
+    h1{
+        font-size: @bigFont;
+    }
 
     .first-paragraph{
         .flex(none, center, column);
+        font-size: @mediumFont;
         .top-one{
-            width:70%;
-            font-size: 2.0rem;
+            width:100%;
         }
     }
 
@@ -22,7 +25,7 @@
             margin-right: 25%;
             width: 120%;
             height: 5%;
-            font-size: 1.5rem;
+            font-size: @smallFont;
             padding: 40%;
             border-radius: 10%;
             text-align: center;
@@ -37,7 +40,7 @@
             margin-left: 25%;
             width: 120%;
             height: 5%;
-            font-size: 1.5rem;
+            font-size: @smallFont;
             padding: 40%;
             border-radius: 10%;
             text-align: center;
@@ -62,21 +65,21 @@
     background-color: @backgroundColor;
     color: @textColor;
     padding-bottom: 2%;
-    font-size: 4rem;
+    font-size: @bigFont;
 
     img{
         width: 20%;
-        fill: white;
+        background-color: white;
     }
     .first-row{
         .flex(space-evenly, none, row);
         .Data{
-            font-size: 3rem;
+            font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
         .Clean{
-            font-size: 3rem;
+            font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
@@ -85,12 +88,12 @@
     .second-row{
         .flex(space-evenly, none, row);
         .Result{
-            font-size: 3rem;
+            font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
         .Map{
-            font-size: 3rem;
+            font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
@@ -101,7 +104,7 @@
     width: 75%;
     .flex(center, none, row);
     .QandA{
-        font-size: 4rem;
+        font-size: @mediumFont;
         .flex(none, center, column);
     }
     img{
@@ -112,7 +115,7 @@
 }
 
 .quote{
-    font-size: 3rem;
+    font-size: @mediumFont;
     background-color: @backgroundColor;
     color: @textColor;
     width: 100%;
@@ -121,6 +124,6 @@
 }
 
 .last-Section{
-    font-size: 3rem;
+    font-size: @mediumFont;
     padding: 5%;
 }

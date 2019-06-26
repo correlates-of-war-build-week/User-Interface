@@ -45,6 +45,7 @@ body {
   align-items: center;
   flex-direction: row;
   padding: 0.5%;
+  background-color: #3ecc79;
 }
 .navigation nav {
   display: flex;
@@ -55,11 +56,11 @@ body {
 }
 .navigation nav a {
   text-decoration: none;
-  color: black;
-  font-size: 1.6rem;
+  color: white;
+  font-size: 2rem;
 }
 .navigation nav a:hover {
-  color: grey;
+  color: black;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -91,7 +92,7 @@ body {
 }
 .tabs .roles .tab {
   color: white;
-  background-color: #27ae5f;
+  background-color: #3ecc79;
   margin: 0 5px;
   padding: 2px 10px;
   font-size: 1.2rem;
@@ -119,11 +120,15 @@ body {
   justify-content: space-between;
   align-items: none;
   flex-direction: column;
-  background-color: #27ae5f;
+  background-color: #3ecc79;
   color: white;
   width: 15%;
   padding: 24px;
   margin-bottom: 16px;
+}
+.information .person .name {
+  font-size: 2rem;
+  font-weight: bold;
 }
 .information .person .bio {
   display: flex;
@@ -142,5 +147,4 @@ body {
 .information .person .bio span {
   padding-left: 10px;
   font-size: 1.6rem;
-  font-weight: bold;
 }

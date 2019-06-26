@@ -3,6 +3,8 @@
     width: 100%;
     .flex(space-around, center, row);
     padding: .5%;
+    background-color: @backgroundColor;
+    
 
     nav{
         .flex(space-between, none, row);
@@ -10,11 +12,11 @@
 
         a{
             text-decoration: none;
-            color:black;
+            color: @textColor;
             &:hover{
-                color: grey;
+                color: black;
             }
-            font-size: 1.6rem;
+            font-size: 2.0rem;
         }
 
         @media @phone{
