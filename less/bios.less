@@ -1,0 +1,36 @@
+.information {
+    .flex(space-evenly, none, row);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 2%;
+
+
+    .person {
+        .flex(space-between, none, column);
+        background-color: @backgroundColor;
+        color:@textColor;
+        width: 15%;
+        padding: 24px;
+        margin-bottom: 16px;
+
+        .bio {
+            .flex(none, center, column);
+            margin-top: 15px;
+            .personalImg {
+                padding: 10px;
+
+                .bioPic {
+                    width: 60%;
+                    height: 50%;
+                }
+            }
+
+            span {
+                padding-left: 10px;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
