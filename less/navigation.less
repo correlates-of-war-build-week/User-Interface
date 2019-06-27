@@ -1,15 +1,16 @@
-// Nagivation Bar
+// Nagivation Bar that includes the logo and the four tabs
 .navigation {
     width: 100%;
     margin-top: 0;
     .flex(space-around, center, row);
     background-color: @backgroundColor;
 
-
+    //This is only for the four tabs
     nav {
         .flex(space-between, baseline, row);
         width: 10%;
 
+        //Specific to Home and AboutUs
         .navA {
             text-decoration: none;
             color: @textColor;
@@ -23,6 +24,7 @@
             margin: 5%;
         }
 
+        //Wanted specific designs for each button so seperated them.
         .button1 {
             text-decoration: none; 
             color: black;

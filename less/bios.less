@@ -1,22 +1,25 @@
+//This encases all the individuals on the team
 .information {
     .flex(center, center, column);
     width: 100%;
     flex-wrap: wrap;
     align-items: baseline; 
     margin-top: 2%;
+    //This encases the first four
     .section1{
         .flex(space-evenly, baseline, row);
         @media @phone {
             .flex(none, center, column);
         }
     }
+    //This encases the last four
     .section2{
          .flex(space-evenly, baseline, row);
          @media @phone {
             .flex(none, center, column);
         }
     }
-
+    //This holds all the design for the specific individual person and all their data.
     .person {
         .flex(center, none, column);
         background-color: @backgroundColor;
@@ -25,11 +28,13 @@
         padding: .24%;
         margin-bottom: 16px;
 
+        //Name of person
         .name{
             font-size: 2.0rem;
             font-weight: bold;
         }
 
+        //The bio of person including a link to there github and role on team.
         .bio {
             .flex(none, center, column);
             margin-top: 15px;
@@ -42,6 +47,7 @@
                 }
             }
 
+            //This is mainly for the word "here" that links us to each individual github account.
             span {
                 padding-left: 10px;
                 font-size: 1.6rem;

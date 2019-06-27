@@ -1,14 +1,18 @@
+//this is for the tabs associated with each role
 .tabs {
   .flex(center, center, column);
 
+  //This is just for the header of the page 
   .title {
     font-size: 4.5rem;
     color: grey;
   }
 
+  //this encases all the tabs that we have created
   .roles {
     .flex(center, center, row);
 
+    //This is focues on the individual tabs. Each tab will receive these styles.
     .tab {
       color: @textColor;
       background-color: @backgroundColor;
@@ -37,6 +41,7 @@
       }
     }
 
+    //Once the user clicks on one of the tabs it becoems the active-tab and receives the specified design found below.
     .active-tab {
       background-color: black;
     }
