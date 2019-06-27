@@ -1,0 +1,47 @@
+.information {
+    .flex(space-evenly, baseline, row);
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline; 
+    margin-top: 2%;
+
+    .person {
+        .flex(space-between, none, column);
+        background-color: @backgroundColor;
+        color:@textColor;
+        width: 15%;
+        padding: 24px;
+        margin-bottom: 16px;
+
+        .name{
+            font-size: 2.0rem;
+            font-weight: bold;
+        }
+
+        .bio {
+            .flex(none, center, column);
+            margin-top: 15px;
+            .personalImg {
+                padding: 10px;
+
+                .bioPic {
+                    width: 60%;
+                    height: 50%;
+                }
+            }
+
+            span {
+                padding-left: 10px;
+                font-size: 1.6rem;
+                .here{
+                    text-decoration: none;
+                    color: @textColor;
+                    font-size: 1.6rem;
+                    white-space: nowrap;
+                }
+
+            }
+        }
+
+    }
+}

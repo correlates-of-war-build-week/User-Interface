@@ -10,7 +10,6 @@
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="./js/index.js" async></script>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,23 +20,24 @@
             <img class="logo" src="img/logo.png" alt="Risk logo" href="index.html">
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="AboutUs.html">About Us</a>
+            <a class="navA" href="index.html">Home</a>
+            <a class="navA" href="AboutUs.html">About Us</a>
+            <a class="button1" href="https://correlatesofwar.netlify.com/register"> Sign Up </a>
+            <a class=button2 href="https://correlatesofwar.netlify.com/login"> Log In </a>
         </nav>
     </header>
 
     <div class=" top-section">
-        <div class = "first-paragraph">
-            <p class="top-one">Our focus is on determining what regions in the world are likely going to experience war. We take into
-                account factors from the economics to the religion of a region. We will provide you with a percentage of how
+        <div class="first-paragraph">
+            <h1>War Correlation</h1>
+            <p class="top-one">Our focus is on determining what regions in the world are likely going to experience war.
+                We take into
+                account factors from the economics to the religion of a region. We will provide you with a percentage of
+                how
                 likely your region will be in war. </p>
             <p>Make sure to check us out by Signing up or logging in if you already have an account:</p>
         </div>
 
-        <div class="buttons">
-            <button class="button1"> Sign Up </button>
-            <button class=button2> Log In </button>
-        </div>
 
         <img class="topImage" src="img/Top.jpg" alt="Data Analysis">
     </div>
@@ -48,13 +48,18 @@
             <section class="Data">
                 <img class="DataImg" src="icons/data.png" alt="Data Image">
                 <h3> Data</h3>
-                <span> We were able to work with correlates of war. They provided us with different datasets that touched upond different datapoints. The data provided was holistic and takes into account many factors. The collection of the data was done in a manner that we trust. You can find more information about the data if you visit this website.</span>
+                <span> We were able to work with correlates of war. They provided us with different datasets that
+                    touched upond different datapoints. The data provided was holistic and takes into account many
+                    factors. The collection of the data was done in a manner that we trust. You can find more
+                    information about the data if you visit this website.</span>
             </section>
 
             <section class="Clean">
                 <img class="CleanImg" src="icons/filter.png" alt="Filter Image">
                 <h3>Filter</h3>
-                <span> Our team of three data scientists were able to go through all the data and clean up the data so that we would be able to work with it. This included anything from removing datasets that were not relevant to cleaning up faulty data (which is expected in large datasets).</span>
+                <span> Our team of three data scientists were able to go through all the data and clean up the data so
+                    that we would be able to work with it. This included anything from removing datasets that were not
+                    relevant to cleaning up faulty data (which is expected in large datasets).</span>
             </section>
         </div>
 
@@ -62,36 +67,45 @@
             <section class="Result">
                 <img class="ResultImg" src="icons/result.png" alt="Result Image">
                 <h3>Result</h3>
-                <span>Once the data sets were cleaned the data scientists were able to run models that took into account all the relevant factors to determine the likelihood of war breaking out in specific regions. Anyone is now able to look at a country and see the percent of how likely it will go to war.</span>
+                <span>Once the data sets were cleaned the data scientists were able to run models that took into account
+                    all the relevant factors to determine the likelihood of war breaking out in specific regions. Anyone
+                    is now able to look at a country and see the percent of how likely it will go to war.</span>
             </section>
 
             <section class="Map">
                 <img class="MapImg" src="icons/worldwide.png" alt="Map Image">
                 <h3>Map</h3>
-                <span>If you register and login with us you will gain access to a map with all the information that was discussed. This includes the percentage for each country along with important information that is relevant to that speciific nation.</span>
+                <span>If you register and login with us you will gain access to a map with all the information that was
+                    discussed. This includes the percentage for each country along with important information that is
+                    relevant to that speciific nation.</span>
             </section>
         </div>
     </div>
 
     <div class="third-section">
-        <section class = "QandA">
+        <section class="QandA">
             <h2>WHAT WE HOPE TO ACCOMPLISH</h2>
             <ol>
-                <li>What problem does your app solve?</li> 
-                <p>Mitigating some of the drawbacks by providing predictability, i.e. getting resources deployed where needed in areas of high likelihood of war. Also, knowing correlates of war can help policy-makers enact policy to reduce the likelihood of war.</p>
+                <li>What problem does your app solve?</li>
+                <p>Mitigating some of the drawbacks by providing predictability, i.e. getting resources deployed where
+                    needed in areas of high likelihood of war. Also, knowing correlates of war can help policy-makers
+                    enact policy to reduce the likelihood of war.</p>
                 <li>Be as specific as possible; how does your app solve the problem?</li>
-                 <p>The problem we are trying to solve, is to create a model that gives an output of the probability/ risk that a region will be in war in a set amount of time (5yrs, 10yrs, 20yrs etc..)</p>
+                <p>The problem we are trying to solve, is to create a model that gives an output of the probability/
+                    risk that a region will be in war in a set amount of time (5yrs, 10yrs, 20yrs etc..)</p>
                 <li>What is the mission statement?</li>
-                 <p>Using machine learning to predict areas with a high likelihood of war.</p>
+                <p>Using machine learning to predict areas with a high likelihood of war.</p>
             </ol>
         </section>
-        <img class ="coding" src="img/code.jpg" alt="Code Image">
+        <img class="coding" src="img/code.jpg" alt="Code Image">
     </div>
 
-    <div class= "quote">
+    <div class="quote">
 
-        <p>"Preventing war is much better than protesting against the war. Protesting the war is too late." -Nhat Hanh </p>
-        <p> Join us now on our mission to prevent wars from happening across the world. We believe that unnecessary wars can be stopped as long as we can properly anticipate where they will occur.</p>
+        <p>"Preventing war is much better than protesting against the war. Protesting the war is too late." -Nhat Hanh
+        </p>
+        <p> Join us now on our mission to prevent wars from happening across the world. We believe that unnecessary wars
+            can be stopped as long as we can properly anticipate where they will occur.</p>
 
     </div>
 
