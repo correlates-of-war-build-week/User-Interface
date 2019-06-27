@@ -45,7 +45,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  background-color: #3ecc79;
+  background-color: #87CEFA;
 }
 .navigation nav {
   display: flex;
@@ -56,7 +56,7 @@ body {
 }
 .navigation nav .navA {
   text-decoration: none;
-  color: white;
+  color: #6e8298;
   font-size: 2rem;
   white-space: nowrap;
   margin: 5%;
@@ -79,8 +79,8 @@ body {
   background-color: white;
 }
 .navigation nav .button1:hover {
-  background-color: #3ecc79;
-  color: white;
+  background-color: #87CEFA;
+  color: #6e8298;
 }
 .navigation nav .button2 {
   text-decoration: none;
@@ -93,8 +93,8 @@ body {
   text-align: center;
   white-space: nowrap;
   border: 1px solid white;
-  background-color: #3ecc79;
-  color: white;
+  background-color: #87CEFA;
+  color: #6e8298;
 }
 .navigation nav .button2:hover {
   background-color: white;
@@ -154,8 +154,8 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: column;
-  background-color: #3ecc79;
-  color: white;
+  background-color: #87CEFA;
+  color: #6e8298;
   padding-bottom: 2%;
   font-size: 4rem;
 }
@@ -233,8 +233,8 @@ body {
 }
 .quote {
   font-size: 3rem;
-  background-color: #3ecc79;
-  color: white;
+  background-color: #87CEFA;
+  color: #6e8298;
   width: 100%;
   padding: 2%;
   display: flex;
@@ -273,13 +273,13 @@ body {
   margin-top: 3%;
 }
 .question {
-  border: 1px solid #3ecc79;
+  border: 1px solid #87CEFA;
   margin: 20px 0;
   padding: 0 20px 25px;
   border-radius: 10px;
   height: 50px;
   overflow: hidden;
-  box-shadow: 2px 2px 2px #3ecc79;
+  box-shadow: 2px 2px 2px #87CEFA;
   position: relative;
 }
 .question .close {
@@ -298,9 +298,9 @@ body {
   padding: 5%;
   border-radius: 2%;
   text-align: center;
-  border: 1px solid #3ecc79;
-  background-color: #3ecc79;
-  color: white;
+  border: 1px solid #87CEFA;
+  background-color: #87CEFA;
+  color: #6e8298;
 }
 @media (max-width: 500px) {
   .question .open {

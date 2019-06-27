@@ -12,15 +12,6 @@ class Question{
     }
 }
 
-
-
-
-
-
-
-
-
-
 const questions = document.querySelectorAll('.question');
 
 questions.forEach(function(QandA){
