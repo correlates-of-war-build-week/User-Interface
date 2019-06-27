@@ -1,22 +1,9 @@
-@import './less/variables';
-@import './less/mixins';
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
-
-* {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-html, body {
-  margin: 0; 
-  padding: 0;
-}
-
-body {
-  .flex(none, center, column);
-  font-family: 'PT Sans', sans-serif;
-}
-
-
-@import './less/navigation';
-@import './less/home-page';
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+@import "about.less";
+@import "login.less";

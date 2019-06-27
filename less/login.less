@@ -1,0 +1,79 @@
+.body{
+  padding: 0;
+  margin: 0;
+  background: url(img/globe-header.jpg);
+  background-position: center;
+  background-size: cover;
+
+  
+    .loginbox{
+      width: 320px;
+      height: 420px;
+      background: @gray;
+      color: @lightblue;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      padding: 70px 30px;
+      .avatar {
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+
+      }
+      h2 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      p {
+        margin: 0;
+        padding: 0px;
+        font-weight: bold;
+      }
+
+      input{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      input[type="text"], [type="password"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+
+      input[type="submit"]{
+        border: none;
+        outline: none;
+        height: 40px;
+        background: @lightblue;
+        color: @gray;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        &:hover {
+          .button-creator(100%, 40px, @btn-bg-color, @btn-font-color, 1.2rem);
+        }
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: 20px;
+        color: @lightblue;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    //loginbox
+} 
+//body
