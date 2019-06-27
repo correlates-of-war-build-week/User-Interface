@@ -1,10 +1,10 @@
 class Question{
     constructor(QandA){
+        
         this.QandA = QandA;
         this.open = QandA.querySelector(".open");
         //We filled in the text here. This was moreso to see how this works and better understand what we did in the previous lessons in class.
-        this.open.textContent = "Answer"
-
+        this.open.textContent = "Answer";
         //again use of dom here to expan the content when user press on "Answer"
         this.open.addEventListener('click', ()=> this.openQuestion())
     }
