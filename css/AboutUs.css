@@ -64,13 +64,6 @@ body {
 .navigation nav .navA:hover {
   color: black;
 }
-@media (max-width: 500px) {
-  .navigation nav {
-    width: 80%;
-    font-size: 1.6;
-    padding: 2%;
-  }
-}
 .navigation nav .button1 {
   text-decoration: none;
   color: black;
@@ -106,6 +99,25 @@ body {
 .navigation nav .button2:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 80%;
+    font-size: 1.6;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .tabs {
   display: flex;

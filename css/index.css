@@ -64,13 +64,6 @@ body {
 .navigation nav .navA:hover {
   color: black;
 }
-@media (max-width: 500px) {
-  .navigation nav {
-    width: 80%;
-    font-size: 1.6;
-    padding: 2%;
-  }
-}
 .navigation nav .button1 {
   text-decoration: none;
   color: black;
@@ -106,6 +99,25 @@ body {
 .navigation nav .button2:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 80%;
+    font-size: 1.6;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .top-section {
   width: 75%;
@@ -190,24 +202,13 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.third-section {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: none;
-  flex-direction: row;
-}
-.third-section .QandA {
+.third-section-title {
   font-size: 4rem;
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: column;
 }
-.third-section img {
-  width: 50%;
-  height: 50%;
-  padding: 5%;
+@media (max-width: 500px) {
+  .third-section-title {
+    font-size: 3rem;
+  }
 }
 .quote {
   font-size: 3rem;
@@ -224,4 +225,74 @@ body {
 .last-Section {
   font-size: 3rem;
   padding: 5%;
+}
+.third-section {
+  width: 75%;
+  display: flex;
+  justify-content: baseline;
+  align-items: none;
+  flex-direction: row;
+}
+.third-section img {
+  width: 50%;
+  height: 50%;
+  padding: 5%;
+}
+@media (max-width: 500px) {
+  .third-section img {
+    display: none;
+  }
+}
+.QandA {
+  font-size: 4rem;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3%;
+}
+.question {
+  border: 1px solid #3ecc79;
+  margin: 20px 0;
+  padding: 0 20px 25px;
+  border-radius: 10px;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #3ecc79;
+  position: relative;
+}
+.question .close {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+}
+.question .open {
+  position: absolute;
+  bottom: 0;
+  margin-left: 70%;
+  cursor: pointer;
+  width: 40%;
+  height: 1%;
+  font-size: 1.5rem;
+  padding: 5%;
+  border-radius: 2%;
+  text-align: center;
+  border: 1px solid #3ecc79;
+  background-color: #3ecc79;
+  color: white;
+}
+@media (max-width: 500px) {
+  .question .open {
+    margin-bottom: 2%;
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .question {
+    font-size: 1.6;
+    width: 120%;
+  }
+}
+.question-open {
+  height: 200px;
 }

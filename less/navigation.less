@@ -23,12 +23,6 @@
             margin: 5%;
         }
 
-        @media @phone {
-            width: 80%;
-            font-size: 1.6;
-            padding: 2%;
-        }
-
         .button1 {
             text-decoration: none; 
             color: black;
@@ -68,6 +62,15 @@
                 color: black;
             }
         }
+        @media @phone {
+            width: 80%;
+            font-size: 1.6;
+            padding: 2%;
+            .flex(center, center, row)
+        }
+    }
+    @media @phone{
+        .flex(center, center, column)
     }
 
 }
