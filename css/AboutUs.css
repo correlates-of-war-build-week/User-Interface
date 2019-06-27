@@ -148,6 +148,13 @@ body {
 .tabs .roles .tab:hover {
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  .tabs .roles .tab {
+    font-size: 1;
+    white-space: nowrap;
+    margin: 0.2%;
+  }
+}
 .tabs .roles .active-tab {
   background-color: black;
 }
@@ -170,6 +177,12 @@ body {
   width: 15%;
   padding: 24px;
   margin-bottom: 16px;
+}
+@media (max-width: 500px) {
+  .information .person {
+    width: 35%;
+    font-size: 1.6;
+  }
 }
 .information .person .name {
   font-size: 2rem;

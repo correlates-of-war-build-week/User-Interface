@@ -143,6 +143,11 @@ body {
   width: 50%;
   padding: 5%;
 }
+@media (max-width: 500px) {
+  .top-section img {
+    width: 100%;
+  }
+}
 .second-section {
   width: 100%;
   display: flex;
@@ -157,6 +162,12 @@ body {
 .second-section img {
   width: 20%;
   background-color: white;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .second-section img {
+    width: 60%;
+  }
 }
 .second-section .first-row {
   display: flex;
@@ -180,6 +191,11 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .second-section .first-row {
+    padding: 5%;
+  }
+}
 .second-section .second-row {
   display: flex;
   justify-content: space-evenly;
@@ -201,6 +217,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .second-section .second-row {
+    padding: 5%;
+  }
 }
 .third-section-title {
   font-size: 4rem;

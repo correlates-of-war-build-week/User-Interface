@@ -1,25 +1,32 @@
-.top-section{
+.top-section {
     width: 75%;
     .flex(flex-start, center, column);
 
-    h1{
+    h1 {
         font-size: @bigFont;
     }
 
-    .first-paragraph{
+    .first-paragraph {
         .flex(none, center, column);
         font-size: @mediumFont;
-        .top-one{
-            width:100%;
+
+        .top-one {
+            width: 100%;
         }
     }
-    img{
+
+    img {
         width: 50%;
         padding: 5%;
+
+        @media @phone {
+            width: 100%;
+        }
     }
 
 }
-.second-section{
+
+.second-section {
     width: 100%;
     .flex(none, center, column);
     background-color: @backgroundColor;
@@ -27,56 +34,77 @@
     padding-bottom: 2%;
     font-size: @bigFont;
 
-    img{
+    img {
         width: 20%;
         background-color: white;
-    }
-    .first-row{
-        .flex(space-evenly, none, row);
-        .Data{
-            font-size: @mediumFont;
-            width: 45%;
-            .flex(flex-start, center, column);
+        margin-top: 2%;
+
+        @media @phone {
+            width: 60%;
         }
-        .Clean{
+    }
+
+    .first-row {
+        .flex(space-evenly, none, row);
+
+        .Data {
             font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
 
-    }
-    .second-row{
-        .flex(space-evenly, none, row);
-        .Result{
+        .Clean {
             font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
         }
-        .Map{
+
+        @media @phone {
+            padding: 5%;
+        }
+
+    }
+
+    .second-row {
+        .flex(space-evenly, none, row);
+
+        .Result {
             font-size: @mediumFont;
             width: 45%;
             .flex(flex-start, center, column);
+        }
+
+        .Map {
+            font-size: @mediumFont;
+            width: 45%;
+            .flex(flex-start, center, column);
+        }
+
+        @media @phone {
+            padding: 5%;
         }
     }
 }
 
-.third-section-title{
+.third-section-title {
     font-size: @bigFont;
+
     @media @phone {
         font-size: @mediumFont;
     }
 }
-.quote{
+
+.quote {
     font-size: @mediumFont;
     background-color: @backgroundColor;
     color: @textColor;
     width: 100%;
-    padding:2%;
+    padding: 2%;
     .flex(none, center, column);
     text-align: center;
 }
 
-.last-Section{
+.last-Section {
     font-size: @mediumFont;
     padding: 5%;
 }
