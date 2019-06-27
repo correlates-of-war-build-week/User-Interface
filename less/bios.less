@@ -1,9 +1,9 @@
 .information {
-    .flex(space-evenly, none, row);
+    .flex(space-evenly, baseline, row);
     width: 100%;
     flex-wrap: wrap;
+    align-items: baseline; 
     margin-top: 2%;
-
 
     .person {
         .flex(space-between, none, column);
@@ -33,6 +33,12 @@
             span {
                 padding-left: 10px;
                 font-size: 1.6rem;
+                .here{
+                    text-decoration: none;
+                    color: @textColor;
+                    font-size: 1.6rem;
+                    white-space: nowrap;
+                }
 
             }
         }

@@ -1,33 +1,74 @@
 // Nagivation Bar
-.navigation{
+.navigation {
     width: 100%;
+    margin-top: 0;
     .flex(space-around, center, row);
-    padding: .5%;
     background-color: @backgroundColor;
-    
 
-    nav{
-        .flex(space-between, none, row);
+
+    nav {
+        .flex(space-between, baseline, row);
         width: 10%;
 
-        a{
+        .navA {
             text-decoration: none;
             color: @textColor;
-            &:hover{
+
+            &:hover {
                 color: black;
             }
+
             font-size: 2.0rem;
+            white-space: nowrap;
+            margin: 5%;
         }
 
-        @media @phone{
-            width:80%;
+        @media @phone {
+            width: 80%;
             font-size: 1.6;
             padding: 2%;
         }
 
-    }
-    @media @phone{
-        padding:1.5%;
+        .button1 {
+            text-decoration: none; 
+            color: black;
+            margin: 5%;
+            width: 60%;
+            height: 5%;
+            font-size: @smallFont;
+            padding: 5%;
+            border-radius: 10%;
+            text-align: center;
+            border: 1px solid white;
+            white-space: nowrap;
+            background-color: white;
+
+            &:hover {
+                background-color: @backgroundColor;
+                color: @textColor;
+            }
+        }
+
+        .button2 {
+            text-decoration: none; 
+            margin: 5%;
+            width: 60%;
+            height: 5%;
+            font-size: @smallFont;
+            padding: 5%;
+            border-radius: 10%;
+            text-align: center;
+            white-space: nowrap;
+            border: 1px solid white;
+            background-color: @backgroundColor;
+            color: @textColor;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
     }
 
 }
+

@@ -40,26 +40,28 @@ body {
 }
 .navigation {
   width: 100%;
+  margin-top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 0.5%;
   background-color: #3ecc79;
 }
 .navigation nav {
   display: flex;
   justify-content: space-between;
-  align-items: none;
+  align-items: baseline;
   flex-direction: row;
   width: 10%;
 }
-.navigation nav a {
+.navigation nav .navA {
   text-decoration: none;
   color: white;
   font-size: 2rem;
+  white-space: nowrap;
+  margin: 5%;
 }
-.navigation nav a:hover {
+.navigation nav .navA:hover {
   color: black;
 }
 @media (max-width: 500px) {
@@ -69,10 +71,41 @@ body {
     padding: 2%;
   }
 }
-@media (max-width: 500px) {
-  .navigation {
-    padding: 1.5%;
-  }
+.navigation nav .button1 {
+  text-decoration: none;
+  color: black;
+  margin: 5%;
+  width: 60%;
+  height: 5%;
+  font-size: 2rem;
+  padding: 5%;
+  border-radius: 10%;
+  text-align: center;
+  border: 1px solid white;
+  white-space: nowrap;
+  background-color: white;
+}
+.navigation nav .button1:hover {
+  background-color: #3ecc79;
+  color: white;
+}
+.navigation nav .button2 {
+  text-decoration: none;
+  margin: 5%;
+  width: 60%;
+  height: 5%;
+  font-size: 2rem;
+  padding: 5%;
+  border-radius: 10%;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid white;
+  background-color: #3ecc79;
+  color: white;
+}
+.navigation nav .button2:hover {
+  background-color: white;
+  color: black;
 }
 .top-section {
   width: 75%;
@@ -93,51 +126,6 @@ body {
 }
 .top-section .first-paragraph .top-one {
   width: 100%;
-}
-.top-section .buttons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: none;
-  flex-direction: row;
-}
-@media (max-width: 500px) {
-  .top-section .buttons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    padding: none;
-  }
-}
-.top-section .buttons .button1 {
-  margin-right: 25%;
-  width: 120%;
-  height: 5%;
-  font-size: 2rem;
-  padding: 40%;
-  border-radius: 10%;
-  text-align: center;
-  white-space: nowrap;
-}
-.top-section .buttons .button1:hover {
-  background-color: #3ecc79;
-  color: white;
-}
-.top-section .buttons .button2 {
-  margin-left: 25%;
-  width: 120%;
-  height: 5%;
-  font-size: 2rem;
-  padding: 40%;
-  border-radius: 10%;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #3ecc79;
-  color: white;
-}
-.top-section .buttons .button2:hover {
-  background-color: white;
-  color: black;
 }
 .top-section img {
   width: 50%;
@@ -210,7 +198,7 @@ body {
   flex-direction: row;
 }
 .third-section .QandA {
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
   justify-content: none;
   align-items: center;
@@ -231,6 +219,7 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .last-Section {
   font-size: 3rem;
