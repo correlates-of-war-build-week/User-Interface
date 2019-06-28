@@ -16,7 +16,7 @@
 [x] All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
 
 ** Thursday
-[] Strong emphasis on bug fixes and UI/UX. 
+[x] Strong emphasis on bug fixes and UI/UX. 
 
 ##Robric
 ** 2 
