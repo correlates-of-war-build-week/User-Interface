@@ -1,26 +1,28 @@
+const logo = document.querySelector('.logo');
+logo.addEventListener("mouseover", (e) => e.target.style.transform = "scale(1.2)");
+logo.addEventListener("mouseout", (e) => e.target.style.transform = "scale(1)")
 
 
-class Article {
-    constructor(domElement) {
-      this.domElement = domElement;
-      console.log("this.domElement", this.domElement)
-      this.expandButton = domElement.querySelector('.expandButton'); 
-      this.expandButton.textContent = 'Read More'
-      this.expandButton.addEventListener('click', () => this.expandArticle());
-    }
-  
-    expandArticle() {
-      this.domElement.classList.toggle('article-open')
-      console.log(this.domElement)
-      let hiddenP = this.domElement.querySelectorAll('p')
-      console.log('hiddenP', hiddenP)
-      hiddenP.forEach(function(p) {
-          p.classList.toggle('hidden')
-      })
-    }
+
+
+class HoverImages {
+  constructor(domElement){
+    console.log(domElement)
+    domElement.addEventListener("mouseover", (e) => e.target.style.boxShadow = "10px 20px 30px gray");
+    domElement.addEventListener("mouseout", (e) => e.target.style.boxShadow = "none")
   }
-  
-  let articles = document.querySelectorAll('.article')
-  console.log(articles)
-  articles.forEach(article => new Article(article));
-  
+}
+
+const contentImages = document.querySelectorAll('.cotent-img')
+contentImages.forEach(img => new HoverImages(img));
+
+
+
+
+
+
+
+
+
+
+

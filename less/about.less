@@ -7,13 +7,17 @@
         padding: 8px;
         margin-top: 50px;
         @media @tablet{
-            margin-top:75px;
+            margin:75px 25px 0 25px;
+            
         }
     }
 
     p {
         color: @lightblue;
-        padding: 10px 90px 50px 90px;
+        padding: 10px 70px 30px 70px;
+        @media @phone{
+            padding: 25px;
+        }
     }
 }
 
@@ -36,10 +40,8 @@
 
     .info {
         display: flex;
-        justify-content: space-evenly;
-        @media @tablet{
-            margin-left: 5%;
-        }
+        justify-content: space-evenly; 
+        margin: 5%;
         @media @phone {
             flex-direction: column;
             align-items: center;
@@ -48,16 +50,18 @@
     
         .info-name {
             padding-top: 20px;
-             padding-bottom:30px;
+            padding-bottom:30px;
+            
             .info-img {
                 width: 220px;
                 box-shadow: 10px 10px 5px grey;
                 border-radius: 50%;
+            
                 @media @tablet {
                     width: 150px;
                 }
                 @media @phone {
-                    width: 250px;
+                    width: 220px;
                 }
             
             }
@@ -69,6 +73,7 @@
             p{
                 font-size: 1.5rem;
                 color: @gray;
+                padding: 5px;
             }
             a {
                 font-size: 1.5rem;
